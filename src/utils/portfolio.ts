@@ -242,7 +242,7 @@ export const projectsSection: ProjectsSectionType = {
       name: "Sugar Cosmetics",
       url: "https://sugar-cosmetics-psi.vercel.app/",
       repo: "https://github.com/ashwekkalgutkar/-Sugar-Cosmetics",
-      img: "",
+      img: "https://github.com/ashwekkalgutkar/ashwekkalgutkar.github.io/blob/main/public/img/Sugar%20cosmetics.png",
       year: 2024,
       tags: ["ReactJS", "ChakraUI", "Redux"],
     },
