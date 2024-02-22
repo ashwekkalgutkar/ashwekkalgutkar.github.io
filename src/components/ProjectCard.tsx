@@ -35,14 +35,20 @@ const ProjectCard = ({
           <Image
             src={img}
             alt={name}
+            // layout="responsive" 
             width={300}
             height={300}
             placeholder="blur"
             blurDataURL={blurImageURL}
             className="w-full h-full object-cover"
+            // style={{ objectFit: 'contain', objectPosition: 'top' }}
           />
         </div>
         <div className="p-4 py-3 space-y-1">
+          <h4 className="flex justify-between group-hover:text-accent capitalize font-medium duration-200">
+            <span>{name}</span>
+            <span className="mr-1">{year}</span>
+          </h4>
           <div className="flex justify-between items-center">
             <p className="text-xs capitalize font-mono">{tags.join(' | ')}</p>
             <div className="flex items-center space-x-1.5">
@@ -62,10 +68,7 @@ const ProjectCard = ({
               </a>
             </div>
           </div>
-          <h4 className="flex justify-between group-hover:text-accent capitalize font-medium duration-200">
-            <span>{name}</span>
-            <span className="mr-1">{year}</span>
-          </h4>
+          
         </div>
       </button>
     </motion.div>
