@@ -6,37 +6,6 @@ import { author, navbarSection } from '../utils/portfolio';
 import { getBreakpointsWidth, getId } from '../utils/helper';
 import useWindowWidth from '../hooks/use-window-width';
 
-/**
- * Hides the navbar while scrolling down
- * @param {Object} config
- * @param {String} [config.id=navbar] - id of navbar
- * @param {Number} [config.offset=100] - offset of navbar in px
- */
-
-const hideNavWhileScrolling = ({
-  id = 'navbar',
-  offset = 100,
-  when = true,
-}: {
-  id?: string;
-  offset?: number;
-  when: boolean;
-}) => {
-  const nav = document.getElementById(id);
-  if (!nav) return;
-
-  let prevScrollPos = window.pageYOffset;
-
-  window.onscroll = () => {
-    if (when) {
-      let curScrollPos = window.pageYOffset;
-      if (prevScrollPos < curScrollPos) nav.style.top = `-${offset}px`;
-      else nav.style.top = '0';
-      prevScrollPos = curScrollPos;
-    }
-  };
-};
-
 type NavItemsProps = {
   href?: string;
   children: React.ReactNode;
@@ -74,8 +43,23 @@ const Navbar = () => {
   const ANIMATION_DELAY = windowWidth <= md ? 0 : 0.8;
 
   useEffect(() => {
-    hideNavWhileScrolling({ when: !navbarCollapsed });
-  }, [navbarCollapsed]);
+    const handleScroll = () => {
+      const navbar = document.getElementById('navbar');
+      if (navbar) {
+        if (window.pageYOffset > 0) {
+          navbar.classList.add('sticky');
+        } else {
+          navbar.classList.remove('sticky');
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
     <motion.header
@@ -83,7 +67,7 @@ const Navbar = () => {
       initial="hidden"
       animate="show"
       id="navbar"
-      className="px-8 md:px-6 xl:px-12 py-4 fixed inset-x-0 top-0 right-0 flex justify-between items-end z-50 duration-500 backdrop-blur-lg"
+      className={`px-8 md:px-6 xl:px-12 py-4 fixed inset-x-0 top-0 right-0 flex justify-between items-end z-50 duration-500 backdrop-blur-lg ${navbarCollapsed ? 'sticky' : ''}`}
     >
       <h1 className="font-signature text-accent capitalize text-2xl relative group top-1">
         <a href="/#hero" className="block">
@@ -143,6 +127,7 @@ const Navbar = () => {
                 })}
                 initial="hidden"
                 animate="show"
+                
               />
             </div>
           </ul>

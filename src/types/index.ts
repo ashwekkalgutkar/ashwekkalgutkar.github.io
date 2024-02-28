@@ -12,6 +12,7 @@ export type CTAType = {
   title: string;
   url: string;
   sameTab?: boolean;
+   download?: boolean;
 };
 
 // env

@@ -50,6 +50,7 @@ export const seoData = {
   ],
 };
 
+
 /*
  * =========================
  * SECTIONS
@@ -139,6 +140,12 @@ export const skillsSection: SkillsSectionType = {
         { name: 'tailwind CSS', icon: 'logos:tailwindcss-icon' },
         { name: 'redux', icon: 'logos:redux' },
         { name: 'database', icon: 'vscode-icons:file-type-sql' },
+        { name: 'Visual Studio Code', icon: 'vscode-icons:file-type-vscode' },
+        { name: 'Postman', icon: 'logos:postman-icon' },
+        { name: 'Express.js', icon: 'skill-icons:expressjs-light' },
+        { name: 'GitHub', icon: 'skill-icons:github-light' },
+        { name: 'Vercel', icon: 'skill-icons:vercel-light' },
+        { name: 'Netlify', icon: 'devicon:netlify' },
       ],
     },
     // {
@@ -267,8 +274,8 @@ export const projectsSection: ProjectsSectionType = {
     {
       id: getId(),
       name: 'Auto Parts - eCommerce',
-      url: 'https://gsierra19-photo-gallery-app.web.app/',
-      repo: 'https://github.com/gaurav-sarage/photo-gallery-app',
+      url: 'https://650992846403785c0ba39b65--luxury-faun-db5a1e.netlify.app/',
+      repo: 'https://github.com/ashwekkalgutkar/Autoparts',
       img: '/img/Auto parts.png',
       year: 2023,
       tags: ['HTML', 'JavaScript', 'json-server', 'Firebase', 'Razorpay'],
@@ -350,6 +357,6 @@ export const socialSection: SocialSectionType = {
 // Footer Section
 
 export const footerSection: FooterSectionType = {
-  title: 'Contact me @9606772560',
+  title: 'Designed By Ashwek kalgutkar',
   link: 'https://www.linkedin.com/in/ashwek-kalgutkar/',
 };

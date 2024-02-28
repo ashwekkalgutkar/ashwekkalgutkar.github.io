@@ -26,16 +26,16 @@ const About = () => {
             Fast-forward to today, and I’ve had the privilege of working at a
             start-up -{' '}
             <Link
-              href="https://about.airmenus.in"
+              href="https://www.xpay.life/"
               target="_blank"
               className="text-accent"
             >
-              AirMenus
+              Xpay.life
             </Link>
             .
           </p>
           <p>
-            My goal is to become a blockchain developer and settle for a good remote job.
+            My goal is to become a DevOps engineer and settle for a good remote job.
           </p>
 
           {list && (
