@@ -106,19 +106,30 @@ const Navbar = () => {
             <div className="flex justify-between gap-5 xl:gap-6 items-center">
               {cta && (
                 <Button
-                  type="link"
                   href={cta.url}
                   sameTab={cta?.sameTab}
-                  variants={slideIn({
-                    delay: ANIMATION_DELAY + navLinks.length / 10,
-                    direction: 'down',
-                  })}
+                  variants={slideIn({ delay: ANIMATION_DELAY + navLinks.length / 10, direction: 'down' })}
                   initial="hidden"
                   animate="show"
+                  onClick={(e) => {
+                    e.preventDefault();
+
+                    const link = document.createElement('a');
+                    link.href = cta.url;
+                    link.setAttribute('download', '');
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                    if (!cta?.sameTab) {
+                      window.open(cta.url, '_blank');
+                    }
+                    setNavbarCollapsed(false);
+                  }}
+                  className="p-2 hover:text-accent duration-500 block"
                 >
                   {cta.title}
                 </Button>
-              )}
+                )}
               <DarkModeButton
                 onClick={() => setNavbarCollapsed(false)}
                 variants={slideIn({

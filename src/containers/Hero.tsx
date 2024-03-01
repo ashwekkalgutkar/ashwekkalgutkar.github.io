@@ -16,6 +16,17 @@ const Hero = () => {
   const getAnimationDelay = (i: number, increment = 0.15) =>
     DEFAULT_ANIMATION_DELAY + increment * i;
 
+   const handleButtonClick = () => {
+    if (cta) {
+      const link = document.createElement('a');
+      link.href = cta.url;
+      link.setAttribute('download', ''); // Set the download attribute to trigger download
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+  };
+
   return (
     <Wrapper
       id="hero"
@@ -68,6 +79,13 @@ const Hero = () => {
       </motion.p>
 
       {cta && (
+        <div
+          style={{ display: 'inline-block' }}
+          className={`mt-3 xs:mt-5 md:mt-8 ${
+            cta.hideInDesktop ? 'md:hidden' : ''
+          }`}
+          onClick={handleButtonClick}
+        >
         <Button
           size="lg"
           type="link"
@@ -79,9 +97,11 @@ const Hero = () => {
             cta.hideInDesktop ? 'md:hidden' : ''
           }`}
           sameTab={cta?.sameTab}
+          
         >
           {cta.title}
         </Button>
+      </div>
       )}
     </Wrapper>
   );

@@ -357,6 +357,6 @@ export const socialSection: SocialSectionType = {
 // Footer Section
 
 export const footerSection: FooterSectionType = {
-  title: 'Designed By Ashwek kalgutkar',
+  title: 'Call me @+91-9606772560',
   link: 'https://www.linkedin.com/in/ashwek-kalgutkar/',
 };
