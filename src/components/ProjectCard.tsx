@@ -11,6 +11,7 @@ const ProjectCard = ({
   repo,
   year,
   img,
+  description,
   tags,
   ...rest
 }: ProjectType & MotionProps) => {
@@ -49,6 +50,7 @@ const ProjectCard = ({
             <span>{name}</span>
             <span className="mr-1">{year}</span>
           </h4>
+          <p className="text-sm text-gray-500">{description}</p>
           <div className="flex justify-between items-center">
             <p className="text-xs capitalize font-mono">{tags.join(' | ')}</p>
             <div className="flex items-center space-x-1.5">

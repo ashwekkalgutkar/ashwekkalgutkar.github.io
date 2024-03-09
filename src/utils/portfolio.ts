@@ -251,6 +251,7 @@ export const projectsSection: ProjectsSectionType = {
       repo: "https://github.com/ashwekkalgutkar/-Sugar-Cosmetics",
       img: '/img/Sugar cosmetics.png',
       year: 2024,
+      description: "This project is a website for Sugar Cosmetics. It is built using ReactJS, ChakraUI, Firebase, Redux, and Razorpay.",
       tags: ['ReactJS', 'ChakraUI', 'Firebase', 'Redux','Razorpay'],
     },
     {
@@ -259,6 +260,7 @@ export const projectsSection: ProjectsSectionType = {
       url: 'https://masai-myntra-fashion-clone.netlify.app/',
       repo: 'https://github.com/ashwekkalgutkar/Myntra-Clone',
       img: '/img/myntra-website.png',
+      description: "This is a clone of the Myntra eCommerce website. It is built using HTML, JavaScript, and CSS.",
       year: 2023,
       tags: ['HTML', 'JavaScript','Responsive', 'CSS'],
     },
@@ -269,6 +271,7 @@ export const projectsSection: ProjectsSectionType = {
       repo: 'https://github.com/Sunil8090/choice_rice',
       img: '/img/Sanitisor.png',
       year: 2023,
+      description: "This project is an eCommerce website for Sanitisor products. It is built using HTML, JavaScript, json-server, and Firebase.",
       tags: ['HTML', 'JavaScript', 'json-server', 'Firebase'],
     },
     {
@@ -278,6 +281,7 @@ export const projectsSection: ProjectsSectionType = {
       repo: 'https://github.com/ashwekkalgutkar/Autoparts',
       img: '/img/Auto parts.png',
       year: 2023,
+      description: "This project is an eCommerce website for Auto Parts. It is built using JavaScript, json-server, Firebase, and Razorpay.",
       tags: ['HTML', 'JavaScript', 'json-server', 'Firebase', 'Razorpay'],
     },
     {
@@ -287,6 +291,7 @@ export const projectsSection: ProjectsSectionType = {
       repo: 'https://github.com/105vivek/Electronic_Store/tree/main/cycle-store',
       img: '/img/Bicycle store.png',
       year: 2023,
+      description: "This project is an eCommerce website for Bicycle Store. It is built using ReactJS, Firebase, ChakraUI, Redux, and Razorpay.",
       tags: ['ReactJS', 'Firebase', 'ChakraUI', 'Redux', 'Razorpay'],
     },
     {
@@ -296,6 +301,7 @@ export const projectsSection: ProjectsSectionType = {
       repo: 'https://github.com/Shivampathak124/Naykaa-Clone',
       img: '/img/Nykaa store.png',
       year: 2022,
+      description: "This project is an eCommerce website for Nykaa. It is built using HTML, JavaScript, and CSS.",
       tags: ['Responsive', 'HTML', 'JavaScript', 'CSS'],
     },
     // {

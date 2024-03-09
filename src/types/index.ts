@@ -31,6 +31,7 @@ export type ProjectType = {
   url: string;
   year: number;
   img: string;
+  description: string;
   tags: string[];
   repo: string;
 };
