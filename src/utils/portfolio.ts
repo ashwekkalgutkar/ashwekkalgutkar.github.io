@@ -37,7 +37,7 @@ export const seoData = {
     'Ashwek Kalgutkar is a full-stack developer who specializes in building (and occasionally designing) exceptional visual interfaces.',
   author: author.name,
   image:
-    'https://user-images.githubusercontent.com/85820227/231264058-df236c47-a8d2-4077-9fa6-3577aa18e8ca.png',
+    'https://avatars.githubusercontent.com/u/72547233?v=4',
   url: '',
   keywords: [
     'Ashwek',
