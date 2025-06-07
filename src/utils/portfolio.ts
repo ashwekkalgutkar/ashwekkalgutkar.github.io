@@ -36,8 +36,7 @@ export const seoData = {
   description:
     'Ashwek Kalgutkar is a full-stack developer who specializes in building (and occasionally designing) exceptional visual interfaces.',
   author: author.name,
-  image:
-    'https://avatars.githubusercontent.com/u/72547233?v=4',
+  image: 'https://avatars.githubusercontent.com/u/72547233?v=4',
   url: '',
   keywords: [
     'Ashwek',
@@ -49,7 +48,6 @@ export const seoData = {
     'Ashwek Kalgutkar Portfolio',
   ],
 };
-
 
 /*
  * =========================
@@ -81,7 +79,7 @@ export const heroSection: HeroSectionType = {
   tagline: 'I create visually appealing interfaces on the web',
   description:
     "I'm a passionate Fullstack Web Developer having an experience of creating web applications using ReactJS & NextJS. ",
-  specialText: "Student @Masai School - Bangalore",
+  specialText: 'Student @Masai School - Bangalore',
   cta: {
     title: 'see my resume',
     url: `/${resumeFileName}`,
@@ -104,7 +102,7 @@ export const aboutSection: AboutSectionType = {
       'Redux',
     ],
   },
-  img: '/Ashwek-kalgutkar.png',
+  img: '/img/ashwek-kalgutkar-primary.jpg',
 };
 
 // * Skills Section
@@ -172,7 +170,7 @@ export const skillsSection: SkillsSectionType = {
 // * Experience Section
 
 export const experienceSection: ExperienceSectionType = {
-  title: "My experience and volunteering",
+  title: 'My experience and volunteering',
   experiences: [
     {
       company: 'Xpay',
@@ -182,10 +180,25 @@ export const experienceSection: ExperienceSectionType = {
       upto: 'July 2022',
       tasks: [
         "Built dynamic web applications using .NET MVC and Angular, resulting in a 15% increase in user engagement.                      Collaborated closely 'with' the design team to implement pixel-perfect UI/UX designs, consistently delivering projects           on-time.",
-        "Developed and maintained CMS, CRM, and HRMS solutions, serving as the digital cornerstone for the payment industry. Utilized MySQL and Azure, creating a blend of efficient data management and scalable cloud solutions. This synergy optimized operations and catalyzed business growth in a competitive landscape",
-        "Collaborated with clients to gather project requirements and translate them into actionable technical tasks, ensuring            client expectations were met or exceeded.",
+        'Developed and maintained CMS, CRM, and HRMS solutions, serving as the digital cornerstone for the payment industry. Utilized MySQL and Azure, creating a blend of efficient data management and scalable cloud solutions. This synergy optimized operations and catalyzed business growth in a competitive landscape',
+        'Collaborated with clients to gather project requirements and translate them into actionable technical tasks, ensuring            client expectations were met or exceeded.',
       ],
     },
+    {
+      company: 'Eruna Technologies',
+      companyUrl: 'https://www.erunatech.com/', 
+      role: 'SDE',
+      started: 'Sep 2024',
+      upto: 'Present',
+      tasks: [
+        'Led the frontend team in building and scaling multiple production-grade web applications using React.js, Tailwind CSS, and Redux. Notable projects include HRMS, CRMs, public service portals, and G4S iConnect—an enterprise-level portal with 1M+ active users.',
+        'Implemented advanced state management solely via Redux for authentication, user sessions, and dynamic theming across applications.',
+        'Ensured data integrity and security using industry-standard AES-256 encryption and HTTPS/TLS protocols to prevent data leakage and enforce secure user sessions.',
+        'Enhanced user experience with smooth animations and transitions using Framer Motion, while improving perceived performance with skeleton loaders and scroll-triggered components.',
+        'Played a key role in maintaining production stability and feature delivery, collaborating closely with backend and QA teams to ensure high-performance, scalable applications.',
+      ],
+    },
+
     // {
     //   company: 'StarkCon',
     //   companyUrl: 'https://starkcon.com',
@@ -246,13 +259,14 @@ export const projectsSection: ProjectsSectionType = {
   projects: [
     {
       id: getId(),
-      name: "Sugar Cosmetics",
-      url: "https://sugar-cosmetics-psi.vercel.app/",
-      repo: "https://github.com/ashwekkalgutkar/-Sugar-Cosmetics",
+      name: 'Sugar Cosmetics',
+      url: 'https://sugar-cosmetics-psi.vercel.app/',
+      repo: 'https://github.com/ashwekkalgutkar/-Sugar-Cosmetics',
       img: '/img/Sugar cosmetics.png',
       year: 2024,
-      description: "This project is a website for Sugar Cosmetics. It is built using ReactJS, ChakraUI, Firebase, Redux, and Razorpay.",
-      tags: ['ReactJS', 'ChakraUI', 'Firebase', 'Redux','Razorpay'],
+      description:
+        'This project is a website for Sugar Cosmetics. It is built using ReactJS, ChakraUI, Firebase, Redux, and Razorpay.',
+      tags: ['ReactJS', 'ChakraUI', 'Firebase', 'Redux', 'Razorpay'],
     },
     {
       id: getId(),
@@ -260,9 +274,10 @@ export const projectsSection: ProjectsSectionType = {
       url: 'https://masai-myntra-fashion-clone.netlify.app/',
       repo: 'https://github.com/ashwekkalgutkar/Myntra-Clone',
       img: '/img/myntra-website.png',
-      description: "This is a clone of the Myntra eCommerce website. It is built using HTML, JavaScript, and CSS.",
+      description:
+        'This is a clone of the Myntra eCommerce website. It is built using HTML, JavaScript, and CSS.',
       year: 2023,
-      tags: ['HTML', 'JavaScript','Responsive', 'CSS'],
+      tags: ['HTML', 'JavaScript', 'Responsive', 'CSS'],
     },
     {
       id: getId(),
@@ -271,7 +286,8 @@ export const projectsSection: ProjectsSectionType = {
       repo: 'https://github.com/Sunil8090/choice_rice',
       img: '/img/Sanitisor.png',
       year: 2023,
-      description: "This project is an eCommerce website for Sanitisor products. It is built using HTML, JavaScript, json-server, and Firebase.",
+      description:
+        'This project is an eCommerce website for Sanitisor products. It is built using HTML, JavaScript, json-server, and Firebase.',
       tags: ['HTML', 'JavaScript', 'json-server', 'Firebase'],
     },
     {
@@ -281,7 +297,8 @@ export const projectsSection: ProjectsSectionType = {
       repo: 'https://github.com/ashwekkalgutkar/Autoparts',
       img: '/img/Auto parts.png',
       year: 2023,
-      description: "This project is an eCommerce website for Auto Parts. It is built using JavaScript, json-server, Firebase, and Razorpay.",
+      description:
+        'This project is an eCommerce website for Auto Parts. It is built using JavaScript, json-server, Firebase, and Razorpay.',
       tags: ['HTML', 'JavaScript', 'json-server', 'Firebase', 'Razorpay'],
     },
     {
@@ -291,7 +308,8 @@ export const projectsSection: ProjectsSectionType = {
       repo: 'https://github.com/105vivek/Electronic_Store/tree/main/cycle-store',
       img: '/img/Bicycle store.png',
       year: 2023,
-      description: "This project is an eCommerce website for Bicycle Store. It is built using ReactJS, Firebase, ChakraUI, Redux, and Razorpay.",
+      description:
+        'This project is an eCommerce website for Bicycle Store. It is built using ReactJS, Firebase, ChakraUI, Redux, and Razorpay.',
       tags: ['ReactJS', 'Firebase', 'ChakraUI', 'Redux', 'Razorpay'],
     },
     {
@@ -301,7 +319,8 @@ export const projectsSection: ProjectsSectionType = {
       repo: 'https://github.com/Shivampathak124/Naykaa-Clone',
       img: '/img/Nykaa store.png',
       year: 2022,
-      description: "This project is an eCommerce website for Nykaa. It is built using HTML, JavaScript, and CSS.",
+      description:
+        'This project is an eCommerce website for Nykaa. It is built using HTML, JavaScript, and CSS.',
       tags: ['Responsive', 'HTML', 'JavaScript', 'CSS'],
     },
     // {
