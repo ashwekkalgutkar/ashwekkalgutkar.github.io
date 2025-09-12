@@ -26,11 +26,11 @@ const About = () => {
             Fast-forward to today, and I’ve had the privilege of working at a
             start-up -{' '}
             <Link
-              href="https://www.xpay.life/"
+              href="https://www.eruna.co.uk/"
               target="_blank"
               className="text-accent"
             >
-              Xpay.life
+              Eruna Technologies
             </Link>
             .
           </p>

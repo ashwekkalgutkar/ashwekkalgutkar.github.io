@@ -36,7 +36,7 @@ const Skill = ({
           ))}
         </div>
 
-        <ul className="text-base space-y-2">
+         <ul className="text-sm gap-1 grid grid-cols-4 ">
           {points.map((point) => (
             <ListItem key={getId()}>{point}</ListItem>
           ))}

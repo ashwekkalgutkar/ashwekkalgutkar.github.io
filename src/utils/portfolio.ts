@@ -108,21 +108,34 @@ export const aboutSection: AboutSectionType = {
 // * Skills Section
 
 export const skillsSection: SkillsSectionType = {
-  title: 'what i do',
-  skills: [
+  title: 'Tech Stack',
+  skills: [   
     {
       id: getId(),
-      title: 'full stack development',
+      title: 'technologies & tools I use',
       // animation lottie file: https://lottiefiles.com/
       lottie: {
         light: '/lotties/frontend.json',
         dark: '/lotties/frontend-dark.json',
       },
       points: [
-        'Building responsive static websites using Next.js',
-        'Building responsive Single Page Apps in React.js',
-        'Building RESTful APIs in Express',
-      ],
+      'HTML5',
+      'CSS3',
+      'JavaScript',
+      'TypeScript',
+      'Node.js',
+      'React.js',
+      'Next.js',
+      'Tailwind CSS',
+      'Redux',
+      'MySQL',
+      'Postman',
+      'Express.js',
+      'GitHub',
+      'Vercel',
+      'Netlify',
+      'VS Code',
+    ],
       softwareSkills: [
         // iconify icons: https://icon-sets.iconify.design/
         { name: 'HTML5', icon: 'vscode-icons:file-type-html' },
@@ -173,6 +186,20 @@ export const experienceSection: ExperienceSectionType = {
   title: 'My experience and volunteering',
   experiences: [
     {
+      company: 'Eruna Technologies',
+      companyUrl: 'https://www.eruna.co.uk/', 
+      role: 'SDE',
+      started: 'Sep 2024',
+      upto: 'Sep 2025',
+      tasks: [
+        'Led the frontend team in building and scaling multiple production-grade web applications using React.js, Tailwind CSS, and Redux. Notable projects include HRMS, CRMs, public service portals, and G4S iConnect—an enterprise-level portal with 1M+ active users.',
+        'Implemented advanced state management solely via Redux for authentication, user sessions, and dynamic theming across applications.',
+        'Ensured data integrity and security using industry-standard AES-256 encryption and HTTPS/TLS protocols to prevent data leakage and enforce secure user sessions.',
+        'Enhanced user experience with smooth animations and transitions using Framer Motion, while improving perceived performance with skeleton loaders and scroll-triggered components.',
+        'Played a key role in maintaining production stability and feature delivery, collaborating closely with backend and QA teams to ensure high-performance, scalable applications.',
+      ],
+    },
+    {
       company: 'Xpay',
       companyUrl: 'https://www.xpay.life/',
       role: 'Full Stack Developer Intern',
@@ -182,20 +209,6 @@ export const experienceSection: ExperienceSectionType = {
         "Built dynamic web applications using .NET MVC and Angular, resulting in a 15% increase in user engagement.                      Collaborated closely 'with' the design team to implement pixel-perfect UI/UX designs, consistently delivering projects           on-time.",
         'Developed and maintained CMS, CRM, and HRMS solutions, serving as the digital cornerstone for the payment industry. Utilized MySQL and Azure, creating a blend of efficient data management and scalable cloud solutions. This synergy optimized operations and catalyzed business growth in a competitive landscape',
         'Collaborated with clients to gather project requirements and translate them into actionable technical tasks, ensuring            client expectations were met or exceeded.',
-      ],
-    },
-    {
-      company: 'Eruna Technologies',
-      companyUrl: 'https://www.erunatech.com/', 
-      role: 'SDE',
-      started: 'Sep 2024',
-      upto: 'Present',
-      tasks: [
-        'Led the frontend team in building and scaling multiple production-grade web applications using React.js, Tailwind CSS, and Redux. Notable projects include HRMS, CRMs, public service portals, and G4S iConnect—an enterprise-level portal with 1M+ active users.',
-        'Implemented advanced state management solely via Redux for authentication, user sessions, and dynamic theming across applications.',
-        'Ensured data integrity and security using industry-standard AES-256 encryption and HTTPS/TLS protocols to prevent data leakage and enforce secure user sessions.',
-        'Enhanced user experience with smooth animations and transitions using Framer Motion, while improving perceived performance with skeleton loaders and scroll-triggered components.',
-        'Played a key role in maintaining production stability and feature delivery, collaborating closely with backend and QA teams to ensure high-performance, scalable applications.',
       ],
     },
 
