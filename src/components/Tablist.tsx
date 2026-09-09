@@ -9,11 +9,13 @@ type Props = {
   experiences: ExperienceType[];
 };
 
+const ITEM_WIDTH_MOBILE = 140;
+
 const Tablist = ({ experiences }: Props) => {
   const [activeExperience, setActiveExperience] = useState(0);
   const windowWidth = useWindowWidth();
 
-  const { role, company, companyUrl, started, upto, tasks } =
+  const { role, company, companyUrl, started, upto, tasks, location } =
     experiences[activeExperience];
 
   const sm = getBreakpointsWidth('sm');
@@ -21,52 +23,58 @@ const Tablist = ({ experiences }: Props) => {
   const sliderStyle =
     windowWidth <= sm
       ? {
-        left: `calc(${activeExperience}*120px)`,
-      }
+          left: `calc(${activeExperience}*${ITEM_WIDTH_MOBILE}px)`,
+        }
       : {
-        top: `calc(${activeExperience}*2.5rem)`,
-      };
+          top: `calc(${activeExperience}*2.5rem)`,
+        };
 
   return (
     <div className="flex flex-col sm:flex-row text-sm md:text-base gap-6 md:gap-10 min-h-[250px]">
       {/* Sidebar */}
-      <div className="font-mono text-xs sm:text-sm relative flex justify-start sm:flex-col overflow-scroll sm:overflow-auto sm:min-w-[150px]">
-        {experiences.map(({ company }, i) => (
+      <div className="font-mono text-xs sm:text-sm relative flex justify-start sm:flex-col overflow-x-auto sm:overflow-visible sm:min-w-[170px] shrink-0">
+        {experiences.map(({ company, tabName }, i) => (
           <button
-            key={getId()}
-            className={`h-10 min-w-[120px] sm:w-auto sm:px-5 sm:!text-left capitalize hover:bg-accent-light hover:text-accent focus:outline-none focus:bg-accent-light focus:text-accent ${i === activeExperience ? 'text-accent' : ''
-              }`}
+            key={i}
+            className={`h-10 min-w-[140px] sm:min-w-[160px] sm:w-auto px-3 sm:px-5 sm:!text-left truncate hover:bg-accent-light hover:text-accent focus:outline-none focus:bg-accent-light focus:text-accent ${
+              i === activeExperience ? 'text-accent' : ''
+            }`}
             onClick={() => setActiveExperience(i)}
           >
-            {company}
+            {tabName || company}
           </button>
         ))}
         {/* Slider */}
         <div className="absolute h-0.5 w-full sm:w-0.5 sm:h-full rounded-full bottom-0 sm:inset-0 left-0 bg-dark-3"></div>
         <div
           style={sliderStyle}
-          className={`absolute h-0.5 w-[120px] sm:w-0.5 sm:h-10 rounded-full bg-accent bottom-0 left-0 sm:inset-0 transition-all duration-250 delay-100 in-scroll`}
+          className="absolute h-0.5 w-[140px] sm:w-0.5 sm:h-10 rounded-full bg-accent bottom-0 left-0 sm:inset-0 transition-all duration-250 delay-100 in-scroll"
         ></div>
       </div>
 
-      <div key={getId()} className="space-y-5 p-1">
+      <div key={company + activeExperience} className="space-y-5 p-1 flex-1">
         <div className="space-y-1">
-          <h3 className="text-lg font-medium text-dark-2 capitalize">
+          <h3 className="text-lg font-medium text-dark-2">
             {role}{' '}
-            <Link href={companyUrl} target="_blank" className="text-accent">
-              @{company}
-            </Link>
+            {companyUrl ? (
+              <Link href={companyUrl} target="_blank" className="text-accent">
+                @{company}
+              </Link>
+            ) : (
+              <span className="text-accent">@{company}</span>
+            )}
           </h3>
-          <p className="text-xs font-mono capitalize">
+          <p className="text-xs font-mono text-dark-3">
             <>
               {started} - {upto}
+              {location ? <span className="ml-2">• {location}</span> : null}
             </>
           </p>
         </div>
 
         <ul className="space-y-2">
-          {tasks.map((task) => (
-            <ListItem key={getId()}>{task}</ListItem>
+          {tasks.map((task, idx) => (
+            <ListItem key={idx}>{task}</ListItem>
           ))}
         </ul>
       </div>
