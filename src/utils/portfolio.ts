@@ -183,14 +183,12 @@ export const skillsSection: SkillsSectionType = {
 // * Experience Section
 
 export const experienceSection: ExperienceSectionType = {
-  title: 'Work Experience',
+  title: 'My experience and volunteering',
   experiences: [
     {
-      company: 'Independent Contractor',
-      tabName: 'Freelance',
-      companyUrl: '',
+      company: 'Freelance',
+      companyUrl: 'https://github.com/ashwekkalgutkar',
       role: 'Freelance Full Stack Developer',
-      location: 'Remote',
       started: 'Nov 2025',
       upto: 'May 2026',
       tasks: [
@@ -200,24 +198,22 @@ export const experienceSection: ExperienceSectionType = {
     },
     {
       company: 'Eruna Technologies',
-      tabName: 'Eruna Technologies',
       companyUrl: 'https://www.eruna.co.uk/',
-      role: 'Software Development Engineer',
-      location: 'Bangalore, IN',
+      role: 'SDE',
       started: 'Sep 2024',
-      upto: 'Aug 2025',
+      upto: 'Sep 2025',
       tasks: [
-        'Coordinated frontend development layout tracks and sprint execution within a 4-member team while conducting peer code reviews.',
-        'Collaborated with product designers to map user specifications into reusable components and application state logic.',
-        'Handled UI performance tuning, front-end bundle optimizations, and cross-browser interface adjustments.',
+        'Led the frontend team in building and scaling multiple production-grade web applications using React.js, Tailwind CSS, and Redux. Notable projects include HRMS, CRMs, public service portals, and G4S iConnect—an enterprise-level portal with 1M+ active users.',
+        'Implemented advanced state management solely via Redux for authentication, user sessions, and dynamic theming across applications.',
+        'Ensured data integrity and security using industry-standard AES-256 encryption and HTTPS/TLS protocols to prevent data leakage and enforce secure user sessions.',
+        'Enhanced user experience with smooth animations and transitions using Framer Motion, while improving perceived performance with skeleton loaders and scroll-triggered components.',
+        'Played a key role in maintaining production stability and feature delivery, collaborating closely with backend and QA teams to ensure high-performance, scalable applications.',
       ],
     },
     {
-      company: 'Independent Contractor',
-      tabName: 'Freelance',
-      companyUrl: '',
+      company: 'Masai',
+      companyUrl: 'https://www.masaischool.com/',
       role: 'Freelance MERN Developer',
-      location: 'Remote',
       started: 'Jan 2023',
       upto: 'Aug 2024',
       tasks: [
@@ -226,16 +222,15 @@ export const experienceSection: ExperienceSectionType = {
       ],
     },
     {
-      company: 'Xiphias Software Technology',
-      tabName: 'Xiphias Software',
-      companyUrl: 'https://www.xiphiastec.com/',
-      role: '.NET Full Stack Developer',
-      location: 'Bangalore, IN',
+      company: 'Xpay',
+      companyUrl: 'https://www.xpay.life/',
+      role: 'Full Stack Developer Intern',
       started: 'Mar 2022',
-      upto: 'Jul 2022',
+      upto: 'July 2022',
       tasks: [
-        'Designed enterprise CRM and CMS implementations using .NET MVC, MySQL, and PostgreSQL.',
-        'Implemented secure email-based authentication rules and streamlined standard CRUD workflows.',
+        "Built dynamic web applications using .NET MVC and Angular, resulting in a 15% increase in user engagement. Collaborated closely with the design team to implement pixel-perfect UI/UX designs, consistently delivering projects on-time.",
+        'Developed and maintained CMS, CRM, and HRMS solutions, serving as the digital cornerstone for the payment industry. Utilized MySQL and Azure, creating a blend of efficient data management and scalable cloud solutions. This synergy optimized operations and catalyzed business growth in a competitive landscape',
+        'Collaborated with clients to gather project requirements and translate them into actionable technical tasks, ensuring client expectations were met or exceeded.',
       ],
     },
   ],
