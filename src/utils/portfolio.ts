@@ -187,7 +187,7 @@ export const experienceSection: ExperienceSectionType = {
   experiences: [
     {
       company: 'Independent Contractor',
-      tabName: 'Freelance (Full Stack)',
+      tabName: 'Freelance',
       companyUrl: '',
       role: 'Freelance Full Stack Developer',
       location: 'Remote',
@@ -214,7 +214,7 @@ export const experienceSection: ExperienceSectionType = {
     },
     {
       company: 'Independent Contractor',
-      tabName: 'Freelance (MERN)',
+      tabName: 'Freelance',
       companyUrl: '',
       role: 'Freelance MERN Developer',
       location: 'Remote',
